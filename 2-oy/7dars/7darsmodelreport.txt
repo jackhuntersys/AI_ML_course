@@ -1,0 +1,26 @@
+
+
+REPORT:
+
+1. Problem Statement : Find insurance cost for one person in USA
+
+2. Data Collection : Data collected from Kaggle.
+    Independent features : age, gender, BMI, family size (children), smoking habits(smoker), geographic factors (region)
+    Target variable : Charges - medical insurance charges
+
+3. Data cleaning : Couldnt find missing values, dublicates, string type values. 
+
+4. Algorithm selection : Our target variable is fits Regression so we chose Linear Regression model to test our dataset.
+
+5. Data preprocessing: 
+    Used Label Encoder to transform object type features to numerical
+    To reach good model performance used Standart Scaling
+
+6. Experiment set-up : by using train_test_split target feature va independent features train va test qismiga ajratildi.
+
+7. Model evaluation: 
+    x_train,y_train orqali model ga fit qilindi. by using x_test   predicted_y topildi. 
+    model performance ni aniqlash uchun mean squared error va R2 scorelar topildi.
+
+8. Conslusion : MSE = 0.22 va R2 = 0.78 . Bu metriclar better fit ni bermaydi lekin shunga yaqinroq natija beradi
+
