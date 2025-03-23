@@ -22,5 +22,5 @@ REPORT:
     x_train,y_train orqali model ga fit qilindi. by using x_test   predicted_y topildi. 
     model performance ni aniqlash uchun mean squared error va R2 scorelar topildi.
 
-8. Conslusion : MSE = 0.22 va R2 = 0.78 . Bu metriclar better fit ni bermaydi lekin shunga yaqinroq natija beradi
+8. Conclusion : MSE = 0.22 va R2 = 0.78 . Bu metriclar better fit ni bermaydi lekin shunga yaqinroq natija beradi
 

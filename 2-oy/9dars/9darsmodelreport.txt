@@ -1,0 +1,55 @@
+
+
+REPORT:
+
+1. Problem Statement : Find Manufacturer's Suggested Retail Price  for used cars in USA
+
+2. Data Collection : Data collected from Kaggle.
+    Independent features :   
+                                1   Make              
+                                2   Model               
+                                3   Year                 
+                                4   Engine Fuel Type   
+                                5   Engine HP         
+                                6   Engine Cylinders   
+                                7   Transmission Type   
+                                8   Driven_Wheels      
+                                9   Number of Doors    
+                                10  Market Category   
+                                11  Vehicle Size       
+                                12  Vehicle Style      
+                                13  highway MPG         
+                                14  city mpg            
+                                15  Popularity
+
+    Target variable : MSRP - Manufacturer's Suggested Retail Price
+
+3. Data cleaning : Found  missing values numerical and classified category, not found dublicates, string type values.
+                   Object type missing value filled by mode() and numerical types filled by mean()
+
+4. Algorithm selection : Our target variable is fits Regression so we chose Decision Tree Regression model to train our dataset.
+
+5. Data preprocessing: 
+    Used Label Encoder to transform object type features to numerical
+    To reach good model performance used Standart Scaling
+
+6. Experiment set-up : by using train_test_split target feature va independent features train va test qismiga ajratildi.
+
+7. Model evaluation: 
+    x_train,y_train orqali model ga fit qilindi. by using x_test   predicted_y topildi. 
+    model performance ni aniqlash uchun mean squared error va R2 scorelar topildi.
+
+    model performance ni oshirish uchun we did GridSearchCV hyperparameter tuning.
+    after tuning found predicted_y with best parameters. with GridSearchCV tuned model found MSE and R2 score
+
+
+
+8. Conclusion : There is no clear difference in metrics before and after tuning
+
+            +--------------------+-----------------+-----------------------+
+            | Metric             |   Before tuning |   GridSearchCV tuning |
+            +====================+=================+=======================+
+            | Mean squared error |       0.0399632 |             0.0380106 |
+            +--------------------+-----------------+-----------------------+
+            | R2 score           |       0.944222  |             0.946948  |
+            +--------------------+-----------------+-----------------------+
