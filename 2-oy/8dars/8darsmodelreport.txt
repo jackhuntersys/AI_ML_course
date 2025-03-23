@@ -1,0 +1,34 @@
+
+
+REPORT:
+
+1. Problem Statement : Analyze customer satisfaction after intervention (aralashish ,tasir)
+
+2. Data Collection : Data collected from Kaggle.
+    Independent features : Group, Customer_Segment, Sales_Before, Sales_After, Customer_Satisfaction_Before, Customer_Satisfaction_After
+    Target variable : Purchase_Made - Indicates whether a purchase was made after the intervention.
+
+3. Data cleaning : In first section Data cleaned with Datacleaner library.
+                   In second section Object type missing value filled by mode() and numerical types filled by mean()
+
+4. Algorithm selection : Our target variable is fits Classification so we chose Decision Tree Classifier model to train and test our dataset.
+
+5. Data preprocessing: 
+            first section: Used Datacleaner lib to transform object type features to numerical.
+            second section: 
+                    Used Label Encoder to transform object type features to numerical
+                    To reach good model performance used Standart Scaling
+
+6. Experiment set-up : by using train_test_split target feature va independent features train va test qismiga ajratildi.
+
+7. Model evaluation: 
+            x_train,y_train orqali model ga fit qilindi. by using x_test   predicted_y topildi. 
+            model performance ni aniqlash uchun accuracy score topildi.
+
+8. Conclusion : By using Datacleaner lib  we got  little good accuracy score but it's not mean our model is best.
+
+            +----------------+--------------------+-----------------------+
+            | Metric         |   With Datacleaner |   Without Datacleaner |
+            +================+====================+=======================+
+            | Accuracy score |              0.518 |                 0.509 |
+            +----------------+--------------------+-----------------------+
