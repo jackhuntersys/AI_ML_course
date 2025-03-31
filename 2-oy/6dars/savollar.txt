@@ -1,7 +1,0 @@
-
-1.Linear Regression va Logistic Regression farqi va o’xshash tomonlari bor?
-
-Javob :    
-
-
-2. 
