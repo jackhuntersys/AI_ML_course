@@ -1,8 +1,8 @@
 import streamlit as st
 from joblib import load
-model = load('car_price_model.joblib')
-if model:
-    print('chiqdi')
+# model = load('car_price_model.joblib')
+# if model:
+#     print('chiqdi')
 
 
 
