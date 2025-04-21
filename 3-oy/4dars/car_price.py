@@ -7,5 +7,5 @@ model = load('car_price.joblib')
 
 
 st.set_page_config(page_title=' app',layout='centered')
-st.title('bu app emas')
+st.title('bu app emas fffffff')
 st.markdown('bu markdown!')
