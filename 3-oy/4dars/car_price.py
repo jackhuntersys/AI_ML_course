@@ -3,7 +3,7 @@ import pandas as pd
 from joblib import load
 from sklearn.metrics import accuracy_score
 
-model = load('car_price_model.joblib')
+model = load('car_price.joblib')
 
 
 st.set_page_config(page_title=' app',layout='centered')
