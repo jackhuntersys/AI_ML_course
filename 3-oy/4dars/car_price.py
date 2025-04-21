@@ -4,7 +4,7 @@ import os
 from joblib import load
 from sklearn.metrics import accuracy_score
 
-model = load('model.joblib')
+model = load('C:/Users/user/Documents/GitHub/AI_ML_course/3-oy/4dars/car_price.joblib')
 
 
 st.set_page_config(page_title=' app',layout='centered')
