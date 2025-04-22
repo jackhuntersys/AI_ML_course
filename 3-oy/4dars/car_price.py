@@ -13,6 +13,7 @@ st.set_page_config(page_title=' app',layout='centered')
 st.title('bu app emas fffffff')
 st.markdown('bu markdown!')
 st.text('sdhsdsdhshdshdhsdhshdhsdhshdhsdhshdshdhs')
+st.time_input()
 
 print("Current dir:", os.getcwd())
 print("Files:", os.listdir('.'))
