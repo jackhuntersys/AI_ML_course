@@ -1,12 +1,1 @@
-# # Ignore joblib files
-# *.joblib
 
-# # Ignore models folder
-# models/
-
-# # Ignore virtual environment
-# venv/
-
-# # Ignore __pycache__ and compiled files
-# __pycache__/
-# *.pyc
