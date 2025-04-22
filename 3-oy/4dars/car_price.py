@@ -33,3 +33,11 @@ input_data = pd.DataFrame([{
     'mpg':mpg,
     'engineSize': engine
 }])
+
+#Prediction logic
+if st.button('Calculate used car price!'):
+   
+    #Predict qiling
+    prediction=model.predict(input_data)
+    st.success(f'Your car price is: {prediction}')
+   
