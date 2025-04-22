@@ -4,7 +4,7 @@ import os
 from joblib import load
 from sklearn.metrics import accuracy_score
 
-model = load(r'model.joblib')
+model = load('model.pkl')
 if model:
     print('true')
 
