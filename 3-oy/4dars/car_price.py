@@ -4,7 +4,7 @@ import os
 from joblib import load
 from sklearn.metrics import accuracy_score
 
-model = load('linear_model.joblib')
+model = load('jackhuntersys/AI_ML_course/3-oy/4dars/linear_model.joblib')
 if model:
     print('true')
 
