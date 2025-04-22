@@ -4,9 +4,9 @@ import os
 from joblib import load
 from sklearn.metrics import accuracy_score
 
-# model = load('model.joblib')
-# if model:
-#     print('true')
+model = load('linear_model.joblib')
+if model:
+    print('true')
 
 
 st.set_page_config(page_title=' app',layout='centered')
